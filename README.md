@@ -384,7 +384,7 @@ If imports like `@helpers/*` don't resolve:
 
 ## License
 
-ISC
+MIT
 
 ---
 
