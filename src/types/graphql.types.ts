@@ -15,12 +15,12 @@ export interface GraphQLError {
     locations?: ReadonlyArray<{
         readonly line: number
         readonly column: number
-    }>
-    path?: ReadonlyArray<string | number>
+    }> | undefined
+    path?: ReadonlyArray<string | number> | undefined
     extensions?: {
         code?: string
         [key: string]: unknown
-    }
+    } | undefined
 }
 
 export interface GraphQLClientConfig {

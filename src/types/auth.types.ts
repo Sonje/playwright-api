@@ -44,7 +44,7 @@ export interface AuthorizationParams {
 
 export interface TokenCache {
     accessToken: string
-    refreshToken?: string
+    refreshToken?: string | undefined
     expiresAt: number
     tokenType: string
 }

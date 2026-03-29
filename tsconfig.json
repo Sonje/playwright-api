@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
-        "target": "es6",
-        "module": "commonjs",
+        "target": "es2022",
+        "module": "NodeNext",
         "lib": ["ES2022"],
         "outDir": "./dist",
         "rootDir": "./src",
@@ -10,7 +10,7 @@
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
         "resolveJsonModule": true,
-        "moduleResolution": "node",
+        "moduleResolution": "NodeNext",
         "allowSyntheticDefaultImports": true,
         "declaration": true,
         "declarationMap": true,
@@ -23,18 +23,17 @@
         "noImplicitOverride": true,
         "noErrorTruncation": true,
         "allowUnreachableCode": false,
-        "exactOptionalPropertyTypes": false,
+        "exactOptionalPropertyTypes": true,
         "noImplicitAny": true,
         "strictNullChecks": true,
         "strictFunctionTypes": true,
         "strictBindCallApply": true,
         "strictPropertyInitialization": true,
-        "baseUrl": ".",
         "paths": {
-            "@types/*": ["src/types/*"],
-            "@helpers/*": ["src/helpers/*"],
-            "@fixtures/*": ["src/fixtures/*"],
-            "@config/*": ["src/config/*"]
+            "@types/*": ["./src/types/*"],
+            "@helpers/*": ["./src/helpers/*"],
+            "@fixtures/*": ["./src/fixtures/*"],
+            "@config/*": ["./src/config/*"]
         }
     },
     "include": ["src/**/*"],
